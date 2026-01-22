@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>活动宝贝展示</title>
+<link href="css/base.css" type="text/css" rel="stylesheet"/>
+<script src="css/jquery.min.js"></script>
+<script src="css/masonry-docs.min.js"></script>
+</head>
+
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li class="nav-this"><a href="babyshow.html">宝贝展示</a></li>
+        <li><a href="signup.html">在线报名</a></li>
+        <li><a href="list.html">最新排名</a></li>
+    </ul>
+</div>
+<div class="wrap">
+	<div class="top">
+    	<img src="images/top0122.jpg" width="1400" height="305">
+    </div>
+	<div class="menubase height1">
+    	<div class="w1000">
+        	<div class="menu"><em>由韩国摄影总监亲自甄选，排名不分先后。</em></div>
+        </div>
+    </div>
+    <!--展示-->
+    <div class="showlistA" style="width:1030px;">
+        <ul  id="masonry" class="container-fluid">
+        	<li class="box">
+            	<img src="imageshow/czy.jpg" />
+                <span class="info infoA">童萌之星：陈梓钰</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/lsy2.jpg" />
+                <span class="info infoA">童萌之星：卢思宇</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/lsy.jpg" />
+                <span class="info infoA">童萌之星：雷丝语</span>              
+            </li>
+            <li class="box">
+            	<img src="imageshow/wqc.jpg" />
+                <span class="info infoA">童萌之星：韦沁辰</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/lqh.jpg" />
+                <span class="info infoA">童萌之星：李芊慧</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/yzx.jpg" />
+                <span class="info infoA">童萌之星：颜赵昕</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/cmy.jpg" />
+                <span class="info infoA">童萌之星：陈美伊</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/ljh.jpg" />
+                <span class="info infoA">童萌之星：李晋昊</span>               
+            </li>
+            
+            <li class="box">
+            	<img src="imageshow/bwy.jpg" />
+                <span class="info infoA">童萌之星：闭婉悦</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/hrx.jpg" />
+                <span class="info infoA">童萌之星：黄苒夕</span>               
+            </li>
+            
+            <li class="box">
+            	<img src="imageshow/txl.jpg" />
+                <span class="info infoA">童萌之星：谭曦蕾</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/nry.jpg" />
+                <span class="info infoA">童萌之星：农茹懿</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/wqh.jpg" />
+                <span class="info infoA">童萌之星：吴其鸿</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/zyx.jpg" />
+                <span class="info infoA">童萌之星：钟懿娴</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/ylq.jpg" />
+                <span class="info infoA">童萌之星：尹俪晴</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/byh.jpg" />
+                <span class="info infoA">童萌之星：包远豪</span>               
+            </li>
+            <li class="box">
+            	<img src="imageshow/lzh.jpg" />
+                <span class="info infoA">童萌之星：梁梓涵</span>               
+            </li>
+         </ul>
+    </div>
+   
+    <!--end展示-->
+    
+    <div class="foot">
+    	<div class="w1000 posi_re rule">
+        	<div class="rulebg"></div>
+            <span class="ruletitle">活动规则</span>
+            <p>主办单位：童萌会</p>
+            <p>参与人群：0~7岁宝贝（身高1.3米以下）</p>
+            <p>报名及投票时间：12月31日-1月10日，1月10日24：00截止报名及投票。</p>
+            <p>报名方式：仅限官网报名。</p>
+            <p>
+            	<strong>奖项设置：</strong>
+            	<span>1. 报名礼：凡报名成功者可获赠价值399元礼品一份；</span>
+                <span>2. 童萌宝贝礼：进入试镜阶段的宝贝，可获赠童萌会特别定制纪念品一套（100名）；</span>
+                <span>3. 童萌之星礼：可由韩国顶尖儿童摄影团队总监量身定制韩式儿童风尚大片一组，并获赠首届“童萌之星”大赛<br />　特别定制奖品1套（各年龄段1－2名）。</span>
+            </p>
+            <em class="mart50">活动最终解释权归童萌会所有</em>
+            <em>童萌会旗舰店：南宁市新民路6号文化综合市场A座2楼，童萌专线0771-2819380</em>
+        </div>
+    </div>
+</div>
+<script>
+$(function() {
+    var $container = $('#masonry');
+    $container.imagesLoaded(function() {
+        $container.masonry({
+                itemSelector: '.box',
+                gutterWidth: 20,
+                isAnimated: true,
+            });
+        });
+    });
+</script>
+</body>
+</html>
